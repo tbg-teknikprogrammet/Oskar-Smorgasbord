@@ -12,23 +12,33 @@ console.log(array1);
 var arrayreverse = array1.reverse(); 
 console.log(arrayreverse);
 
-Numbers_Same = [1,1,1,1,1,1,1,1,1,];
-Numbers_Not_Same = [1,2,3,4,5,6,7,8,9];
-var i = 0;
-Numbers_Same.forEach(Numbers_Same){
-    if(Numbers_Same[0] !== Numbers_Same[i])
-    {
-        return false;
-    }
-    i++;
-}
-Numbers_Not_Same.forEach(Numbers_Not_Same){
-    if(Numbers_Not.Same[0] !== Numbers_Not_Same[i])
-    {
-        return false;
-    }
-    i++;
-}
-   
+// Numbers_Same = [1,1,1,1,1,1,1,1,1,];
+// Numbers_Not_Same = [1,2,3,4,5,6,7,8,9];
+// var i = 0;
+// Numbers_Same.forEach(Numbers_Same){
+//     if(Numbers_Same[0] !== Numbers_Same[i])
+//     {
+//         return false;
+//     }
+//     i++;
+// }
+// Numbers_Not_Same.forEach(Numbers_Not_Same){
+//     if(Numbers_Not.Same[0] !== Numbers_Not_Same[i])
+//     {
+//         return false;
+//     }
+//     i++;
+// }
 
+function isIdentical(array) {
+    var first = array[0];
+    for(var i = 1; i < array.length; i++) {
+        if(array[i] !== first) {
+            return false;
+        }
+    }
+    return true;
+}
 
+console.log(isIdentical([1,1,1,1]));
+console.log(isIdentical([1,1,21,12]));
