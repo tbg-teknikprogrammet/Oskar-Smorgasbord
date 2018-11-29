@@ -42,3 +42,26 @@ function isIdentical(array) {
 
 console.log(isIdentical([1,1,1,1]));
 console.log(isIdentical([1,1,21,12]));
+
+function sumarray(array){
+    var Final = 0;    
+    for(var i = 0; i < array.length; i++)
+        { 
+            Final = Final + array[i];
+        }  
+    return Final;
+ }
+console.log(sumarray([1,5,123,4,2,1]));
+
+function max(array){
+    max = 0;
+    for(var i = 0; i < array.length; i++)
+    {
+        if(max < array[i])
+        {
+            max = array[i];
+        }
+    }
+    return max;
+}
+console.log(max([1,5,12,30,2,1]));
