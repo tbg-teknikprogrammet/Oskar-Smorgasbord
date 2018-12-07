@@ -43,7 +43,7 @@ function isIdentical(array) {
 console.log(isIdentical([1,1,1,1]));
 console.log(isIdentical([1,1,21,12]));
 
-function sumarray(array){
+function sumArray(array){
     var Final = 0;    
     for(var i = 0; i < array.length; i++)
         { 
@@ -51,7 +51,7 @@ function sumarray(array){
         }  
     return Final;
  }
-console.log(sumarray([1,5,123,4,2,1]));
+console.log(sumArray([1,5,123,4,2,1]));
 
 function max(array){
     max = 0;
