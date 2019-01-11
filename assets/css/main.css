@@ -1,7 +1,9 @@
 @charset 'utf-8';
 body {
-    background-color: #331E36;
+    background-image: linear-gradient(to bottom right,#331E36,#41337A);
     margin: 0px;
+    padding: 0;
+    
 }
 header h1 {
     font-size: 60px;
@@ -21,7 +23,7 @@ div section{
 }
 div.wrapper {
     width: 60%;
-    margin: 50px auto;
+    margin: 50px auto 100% auto;
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr 1fr;
@@ -69,6 +71,6 @@ a {
     padding: 20px;
     font-size: 32px;
     font-family: fantasy;
-    color: #C2EFEB;
+    color: #ECFEE8;
     text-decoration: none;
 }    
