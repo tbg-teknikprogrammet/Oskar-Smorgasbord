@@ -23,7 +23,7 @@ function clicked(input)
             leng = todolist.length;//tog tre år för denna sak att fungera
             todolist[leng] = text;
  
-            console.log(please)//debugging tools
+            console.log(leng)//debugging tools
             console.log(inputstr)//debugging tools
             console.log(todolist)//debugging tools
         }
