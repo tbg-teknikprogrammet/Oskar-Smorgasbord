@@ -2,11 +2,10 @@
 body{
     margin: 0;
     width: 100%;
-    background: transparent;
+    background: #DCDCDC;
     
     height: 100%;
 }
-
 .content{
     background: transparent;
 
@@ -24,3 +23,9 @@ section{
     min-height: 100px;
     background: transparent;
 }
+iframe{
+    visibility: hidden;
+}
+#image{
+    position:absolute;
+    }

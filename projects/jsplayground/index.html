@@ -4,8 +4,12 @@
 		<meta charset="utf-8" />
 		<title>#</title>
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
+
 	</head>
 	<body>
+		<img hight="40px" width="40px" id="image" src="assets/images/Bomb.png"/>
 		<div class="content">
 			<section style="overflow-y:scroll;">
 				<p>
@@ -20,14 +24,42 @@
 					Donec et erat nibh. Ut quis felis sed ipsum efficitur pharetra nec sed metus.
 				</p>
 			</section>
-			<section>s</section>
-			<section>s</section>
-			<section>s</section>
-			<section>s</section>
-			<section>s</section>
+			<section id="video">
+				<button id="video1">furret walk</button>
+				<button id="video2">duck shoes</button>
+				<button id="video4">sea shanties</button>
+				<button id="video5">sea shanty2</button>
+				<button id="hidev">hide X</button>
+				<iframe id="ifrm" width="420" height="315"
+				src="">
+				</iframe>
+			</section>
+			<div id='map' style='width: 400px; height: 300px;'></div>
+			<section>
+				<h1 id="h1"><time>00:00:00</time></h1>
+				<button id="start">start</button>
+				<button id="stop">stop</button>
+				<button id="clear">clear</button>
+			</section>
+			<section>
+				<h1>Audio Recording Test</h1>
+				<p>Talk for 3 seconds, then you will hear your recording played back</p>
+				<button id="action" onclick="handleAction()">Start recording...</button>
+			</section>
+			<section id="RGB"><h1 id="color">rgb(255,0,0)</h1></section>
+			<script>
+				mapboxgl.accessToken = 'pk.eyJ1Ijoib2Jqb3JrMDAiLCJhIjoiY2p3MjJwNTY4MDJuNDN6bzUydjdpMW8wNyJ9.dubOAjBI2hY0dIUUb7Rodw';
+				var map = new mapboxgl.Map({
+				container: 'map',
+				style: 'mapbox://styles/objork00/cjw2305vz0r4v1co1dv1sitop',
+				center: [18.671711, 64.594866],
+ 				zoom: 13.00
+				});
+			</script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 			<script src="assets/js/parallax.js-1.5.0/parallax.min.js"></script>
 			<script src="assets/js/bs.js"></script>
+			<script src="assets/js/record_audio.js"></script>
 		</div>
 	</body>
 </html>
