@@ -28,4 +28,5 @@ iframe{
 }
 #image{
     position:absolute;
-    }
+    z-index: -1;
+}
